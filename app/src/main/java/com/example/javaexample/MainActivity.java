@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +18,10 @@ public class MainActivity extends AppCompatActivity {
         tracks.add(new Track("Mobile","Tommy"));
         tracks.add(new Track("Web","Brian"));
         tracks.add(new Track("Games","Carlton"));
+
+        List<String> students = Arrays.asList("Harry","Ron","Ben");
+
+
 
     }
 }
