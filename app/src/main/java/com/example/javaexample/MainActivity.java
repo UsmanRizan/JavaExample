@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         for(Map.Entry<String,Track> entry : assignments.entrySet()){
-            Log.d("CS50",entry.getKey()+" got "+entry.getValue().name+" with "+entry.getValue().instructor);
+            Track track = entry.getValue();
+            Log.d("CS50",entry.getKey()+" got "+track.getName()+" with "+track.getInstructor());
         }
 
     }
