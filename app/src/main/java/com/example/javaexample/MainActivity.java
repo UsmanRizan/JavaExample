@@ -5,7 +5,10 @@ import android.os.Bundle;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +24,14 @@ public class MainActivity extends AppCompatActivity {
 
         List<String> students = Arrays.asList("Harry","Ron","Ben");
 
+        Map<String , Track> assignments = new HashMap<>();
 
+        Random random = new Random();
+
+        for (String student : students){
+            int index =  random.nextInt(tracks.size());
+            assignments.put(student,tracks.get(index));
+        }
 
     }
 }
